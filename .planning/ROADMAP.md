@@ -29,7 +29,10 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The hero section fills the full viewport height on both desktop and iOS Safari (no overflow, no scroll bar on first load)
   4. The footer is present at the bottom of the page with an LGPD privacy notice
   5. Smooth scroll is active — clicking the nav CTA anchor glides to the target section without a hard jump
-**Plans**: TBD
+**Plans**: 2 plans
+Plans:
+- [ ] 01-01-PLAN.md — Design system, document skeleton, and static frosted-glass nav
+- [ ] 01-02-PLAN.md — Full-viewport hero section with geometric accent and LGPD footer
 **UI hint**: yes
 
 ### Phase 2: Content Sections
@@ -78,7 +81,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/2 | Planned | - |
 | 2. Content Sections | 0/? | Not started | - |
 | 3. Form + Interactivity | 0/? | Not started | - |
 | 4. Animations + Polish | 0/? | Not started | - |
