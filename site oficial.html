@@ -2561,14 +2561,12 @@
         }, { passive:true });
 
         // ── scroll ────────────────────────────────────────────────
-        var progressRef = 0, _heroMaxP = 0;
+        // Hero é reversivo: ao voltar ao topo mostra o estado inicial normalmente
+        var progressRef = 0;
         function handleScroll() {
             var rect = container.getBoundingClientRect();
             var wh = window.innerHeight;
-            var p = clamp(-rect.top / (rect.height - wh), 0, 1);
-            // Trava: nunca retrocede
-            _heroMaxP = Math.max(_heroMaxP, p);
-            progressRef = _heroMaxP;
+            progressRef = clamp(-rect.top / (rect.height - wh), 0, 1);
         }
         window.addEventListener('scroll', handleScroll, { passive:true });
         handleScroll();
